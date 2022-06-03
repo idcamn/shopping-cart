@@ -15,7 +15,7 @@
     <div class="container">
       <div class="header__inner">
         <a href="#" class="logo">
-          <img src="./img/logo.svg" alt="" class="logo-img">
+          <img src="./img/logo.svg" alt="Логотип сайта" width="35" height="41" class="logo-img">
           <p class="logo-text">Магазин книг</p>
         </a>
         <p class="balance-text">Баланс: <span class="balance">10200</span> руб.</p>
@@ -24,8 +24,78 @@
   </header>
   <main class="main">
     <div class="container">
-      <section class="shop-main"></section>
-      <section class="shop-cart"></section>
+      <div class="main__inner">
+        <section class="shop-main">
+          <div class="shop-main__top">
+            <button class="shop-main__top-sort-btn">
+              Сортировать по цене
+              <img src="./img/sort.svg" alt="Иконка сортировки" width="24" height="24" class="shop-main__top-sort-icon">
+            </button>
+            <button class="shop-main__top-select-btn">
+              Категория
+              <img src="./img/arrow-down.svg" alt="Стрелка вниз" width="24" height="24" class="shop-main__top-select-icon">
+            </button>
+          </div>
+          <div class="shop-main__search">
+            <input type="text" class="shop-main__search-bar" placeholder="Введите название книги">
+            <img src="./img/search.svg" alt="Иконка поиска" class="shop-main__search-icon">
+          </div>
+          <div class="shop-main__list">
+            <div class="shop-main__list-card">
+              <div class="shop-main__list-card-avatar">
+                <img src="./img/item.jpg" alt="Изображение книги" class="shop-main__list-card-img">
+              </div>
+              <div class="shop-main__list-card-hero">
+                <p class="shop-main__list-card-text">Совершенный код. Мастер-класс</p>
+                <p class="shop-main__list-card-text"><span class="shop-main__list-card-price">150</span> руб.</p>
+                <button class="shop-main__list-card-btn">В корзину</button>
+              </div>
+            </div>
+            <!-- <div class="shop-main__list-card">
+              <div class="shop-main__list-card-avatar">
+                <img src="./img/item.jpg" alt="Изображение книги" class="shop-main__list-card-img">
+              </div>
+              <div class="shop-main__list-card-hero">
+                <p class="shop-main__list-card-text">Совершенный код. Мастер-класс</p>
+                <p class="shop-main__list-card-text"><span class="shop-main__list-card-price">150</span> руб.</p>
+                <button class="shop-main__list-card-btn">В корзину</button>
+              </div>
+            </div>
+            <div class="shop-main__list-card">
+              <div class="shop-main__list-card-avatar">
+                <img src="./img/item.jpg" alt="Изображение книги" class="shop-main__list-card-img">
+              </div>
+              <div class="shop-main__list-card-hero">
+                <p class="shop-main__list-card-text">Совершенный код. Мастер-класс</p>
+                <p class="shop-main__list-card-text"><span class="shop-main__list-card-price">150</span> руб.</p>
+                <button class="shop-main__list-card-btn">В корзину</button>
+              </div>
+            </div>
+            <div class="shop-main__list-card">
+              <div class="shop-main__list-card-avatar">
+                <img src="./img/item.jpg" alt="Изображение книги" class="shop-main__list-card-img">
+              </div>
+              <div class="shop-main__list-card-hero">
+                <p class="shop-main__list-card-text">Совершенный код. Мастер-класс</p>
+                <p class="shop-main__list-card-text"><span class="shop-main__list-card-price">150</span> руб.</p>
+                <button class="shop-main__list-card-btn">В корзину</button>
+              </div>
+            </div> -->
+            <!-- <p class="shop-main__list-empty-text">Нет книг</p> -->
+          </div>
+        </section>
+        <section class="shop-cart">
+          <div class="shop-cart__top">
+            <h2 class="shop-cart__title">
+              Корзина
+              <img src="./img/cart.svg" alt="Иконка корзины" width="33" height="33" class="shop-cart__title-icon">
+            </h2>
+          </div>
+          <div class="shop-cart__inner"></div>
+          <div class="shop-cart__bottom"></div>
+          <p class="shop-cart__empty-text">Нет добавленных книг</p>
+        </section>
+      </div>
     </div>
   </main>
 </body>

@@ -18,10 +18,6 @@ body {
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  
-  /*
-  font-family: 'Roboto', sans-serif;
-  */
 }
 
 .header {
@@ -60,4 +56,154 @@ body {
 
 .main {
   margin-top: 50px;
+}
+
+.main__inner {
+  display: flex;
+}
+
+.shop-main {
+  flex-grow: 3;
+  margin-right: 20px;
+}
+
+.shop-cart {
+  flex-grow: 2;
+}
+
+.shop-main__top {
+  display: flex;
+  align-items: center;
+}
+
+.shop-main__top-sort-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 22px;
+}
+
+.shop-main__top-sort-icon {
+  padding: 4px;
+}
+
+.shop-main__top-select-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.shop-main__top-select-icon {
+  padding: 5px;
+}
+
+.shop-main__search {
+  position: relative;
+  margin-top: 13px;
+}
+
+.shop-main__search-bar {
+  width: 100%;
+  padding: 7px 35px 8px;
+  border: none;
+  border-bottom: 1px solid #CCCCCC40;
+  font-size: 14px;
+}
+
+.shop-main__search-bar:focus {
+  outline: 2px solid #0066db;
+  border-radius: 5px;
+}
+
+.shop-main__search-bar::placeholder {
+  color: #00000066;
+}
+
+.shop-main__search-icon {
+  position: absolute;
+  left: 7px;
+  top: 6px;
+}
+
+.shop-main__list {
+  max-width: 862px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 7px;
+}
+
+.shop-main__list-card {
+  max-width: 361px;
+  display: flex;
+  position: relative;
+  margin-top: 23px;
+}
+
+.shop-main__list-card:nth-child(2n) {
+  margin-left: 110px;
+}
+
+.shop-main__list-card-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 9px;
+}
+
+.shop-main__list-card-price {
+  font-size: 24px;
+}
+
+.shop-main__list-card-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 6px 26px;
+  border: none;
+  border-radius: 8px;
+  background-color: #c4c4c4;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.shop-main__list-empty-text {
+  color: #00000066;
+  font-size: 32px;
+}
+
+.shop-cart {
+  height: 830px;
+  max-height: 830px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-cart__title {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  margin: 12px;
+}
+
+.shop-cart__title-icon {
+  margin-left: 13px;
+}
+
+.shop-cart__empty-text {
+  color: #00000099;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
