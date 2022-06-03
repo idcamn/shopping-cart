@@ -16,4 +16,48 @@ html {
 
 body {
   min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  
+  /*
+  font-family: 'Roboto', sans-serif;
+  */
+}
+
+.header {
+  max-height: 80px;
+  border: 1px solid #CCCCCC40;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  margin-right: 11px;
+  width: 35px;
+  height: 41px;
+}
+
+.logo-text {
+  padding: 20px 0;
+  font-size: 32px;
+  color: #000;
+}
+
+.balance-text {
+  padding: 27px 24px 29px 0;
+  font-size: 20px;
+}
+
+.main {
+  margin-top: 50px;
 }
