@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  max-width: 1298px;
+  margin: 0 auto;
+}
+
+body {
+  min-height: 100vh;
+}
