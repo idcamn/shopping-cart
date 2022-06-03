@@ -14,6 +14,10 @@ html {
   margin: 0 auto;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 body {
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
@@ -99,10 +103,40 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
 }
 
 .shop-main__top-select-icon {
   padding: 5px;
+}
+
+.shop-main__top-select-list {
+  width: 176px;
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  top: 35px;
+  left: -10px;
+}
+
+.shop-main__top-select-list input[type=radio] {
+  display: none;
+}
+
+.shop-main__top-select-list label:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.shop-main__top-select-list label {
+  font-size: 12px;
+  text-align: start;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 7px;
 }
 
 .shop-main__search {
@@ -136,21 +170,17 @@ body {
 .shop-main__list {
   max-width: 862px;
   font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-top: 7px;
 }
 
 .shop-main__list-card {
-  max-width: 361px;
+  max-width: 391px;
+  width: 100%;
   display: flex;
   position: relative;
   margin-top: 23px;
-}
-
-.shop-main__list-card:nth-child(2n) {
-  margin-left: 110px;
 }
 
 .shop-main__list-card-hero {
@@ -194,11 +224,40 @@ body {
   font-weight: normal;
   display: flex;
   align-items: center;
-  margin: 12px;
+  margin: 13px 10px 0;
 }
 
 .shop-cart__title-icon {
   margin-left: 13px;
+}
+
+.shop-cart__inner-item {
+  border-bottom: 1px solid #00000040;
+  position: relative;
+  margin-top: 20px;
+}
+
+.shop-cart__inner-item-count {
+  font-size: 14px;
+  color: #00000080;
+}
+
+.shop-cart__inner-item-price {
+  font-size: 18px;
+  margin: 8px 0 4px;
+}
+
+.shop-cart__inner-item-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  background: url("../img/cross.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
 }
 
 .shop-cart__empty-text {
