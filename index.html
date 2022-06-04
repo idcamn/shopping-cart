@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/x-icon" href="./favico.png">
   <title>Корзина</title>
 </head>
 <body>
@@ -37,14 +38,7 @@
               <img src="./img/arrow-down.svg" alt="Стрелка вниз" width="24" height="24" class="shop-main__top-select-icon">
 
               <div class="shop-main__top-select-list hidden">
-                <input type="radio" name="category" id="category-design">
-                <label for="category-design">Дизайн</label>
-                <input type="radio" name="category" id="category-management">
-                <label for="category-management">Управление проектами</label>
-                <input type="radio" name="category" id="category-development">
-                <label for="category-development">Разработка</label>
-                <input type="radio" name="category" id="category-testing">
-                <label for="category-testing">Тестирование</label>
+                <!-- Список категорий -->
               </div>
             </button>
           </div>
@@ -53,6 +47,7 @@
             <img src="./img/search.svg" alt="Иконка поиска" class="shop-main__search-icon">
           </div>
           <div class="shop-main__list">
+            <!-- Список книг в магазине -->
             <!-- <p class="shop-main__list-empty-text">Нет книг</p> -->
           </div>
         </section>
@@ -64,33 +59,14 @@
             </h2>
           </div>
           <div class="shop-cart__inner">
-            <div class="shop-cart__inner-item">
-              <p class="shop-cart__inner-item-name">Тест</p>
-              <p class="shop-cart__inner-item-count">1 шт.</p>
-              <p class="shop-cart__inner-item-price">250 руб.</p>
-              <button class="shop-cart__inner-item-btn"></button>
-            </div>
-            <div class="shop-cart__inner-item">
-              <p class="shop-cart__inner-item-name">Проверка</p>
-              <p class="shop-cart__inner-item-count">2 шт.</p>
-              <p class="shop-cart__inner-item-price">320 руб.</p>
-              <button class="shop-cart__inner-item-btn"></button>
-            </div>
-            <div class="shop-cart__inner-item">
-              <p class="shop-cart__inner-item-name">Тестирование</p>
-              <p class="shop-cart__inner-item-count">7 шт.</p>
-              <p class="shop-cart__inner-item-price">572 руб.</p>
-              <button class="shop-cart__inner-item-btn"></button>
-            </div>
-            <div class="shop-cart__inner-item">
-              <p class="shop-cart__inner-item-name">Test</p>
-              <p class="shop-cart__inner-item-count">3 шт.</p>
-              <p class="shop-cart__inner-item-price">1500 руб.</p>
-              <button class="shop-cart__inner-item-btn"></button>
-            </div>
+            <!-- Предметы в корзине -->
           </div>
-          <div class="shop-cart__bottom"></div>
           <p class="shop-cart__empty-text">Нет добавленных книг</p>
+          <div class="shop-cart__bottom hidden">
+            <p class="shop-cart__bottom-notify hidden">Покупка совершена!</p>
+            <p class="shop-cart__bottom-price-text"><span class="shop-cart__bottom-price">1200</span> руб.</p>
+            <button class="shop-cart__bottom-btn">Купить</button>
+          </div>
         </section>
       </div>
     </div>
