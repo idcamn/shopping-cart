@@ -126,7 +126,7 @@ body {
 }
 
 .shop-main__top-sort-btn:hover,
-.shop-main__top-select-list > label:hover {
+.shop-main__top-select-btn-text:hover {
   color: #aaa;
   transition: 0.3s all;
 }

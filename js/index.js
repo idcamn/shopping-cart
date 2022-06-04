@@ -195,6 +195,8 @@ let bookStore = {
         categoryList.classList.add('hidden');
         categoryIcon.style.transform = 'rotate(0deg)';
         bookStore.fetchBooksFilter('', sortPrice, category);
+        let btn = document.querySelector('.shop-main__top-select-btn-text');
+        btn.innerText = item.name;
       });
       fragment.appendChild(input);
       let label = document.createElement('label');
